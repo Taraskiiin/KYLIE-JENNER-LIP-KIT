@@ -1,0 +1,184 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/ofont.ru_Bebas Neue.ttf') format('truetype');
+    font-family: 'GothamPro';
+    src: url("../fonts/GothamPro.ttf") format('truetype');
+    font-family: 'GothamPro-Bold';
+    src: url("../fonts/GothamPro-Bold.ttf") format('truetype');
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bebas Neue', Fallback, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 320px;
+    margin: 0 auto;
+}
+.header__box{
+    padding-top: 20px;
+    padding-bottom: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #f0ebe8;
+    position: relative;
+}
+.header__box::after,
+.order__block-inner::after,
+.about__inner::after{
+    content: " ";
+    position: absolute;
+    width: 100%;
+    height: 23px;
+    background-image: url(../image/header-border.png);
+    bottom: -12px;
+    left: 0;
+    z-index: 2;
+}
+.header__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__inner h1{
+    margin-top: 0;
+    color: #333333;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.header__inner h5{
+    margin-top: 5px;
+    font-size: 12px;
+    color: #d4416a;
+    margin-bottom: 20px;
+}
+.contact__info{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+}
+.contact__info a{
+    padding-left: 12px;
+    padding-right: 12px;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 28px;
+}
+.contact__info a > span{
+    font-weight: 400;
+}
+.order__block-inner,
+.about__inner{
+    background-color: #f1f1f1;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.order__block-inner::after{
+    background-image: url(../image/order-border.png);
+}
+.order__block-inner h3{
+    text-transform: uppercase;
+    max-width: 270px;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.order__block-inner h3 > span{
+    color: #d4416a;
+}
+.order__block-inner .lipstick__image{
+    background-image: url(../image/lip-order.png);
+    width: 118px;
+    height: 219px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.order__block-inner .lipstick__image::after{
+    content: '';
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    background-image: url(../image/price.png);
+    bottom: calc(100% - 45px);
+    right: calc(100% - 45px);
+}
+.order__block-inner a,
+.about__inner a{
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    display: block;
+    background-color: #be3e62;
+    max-width: 230px;
+    height: 46px;
+    padding: 15px 29px 17px 28px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 200;
+    border-radius: 5px;
+    font-family: GothamPro sans-serif;
+}
+.order__block-inner a > span{
+    font-weight: 700;
+    font-family: GothamPro-Bold sans-serif;
+}
+.order__block-inner p{
+    margin-top: 0;
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: GothamPro sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.about__inner{
+    background-color: #f0ebe8;
+    font-family: GothamPro sans-serif;
+    color: #333333;
+}
+.about__inner h3{
+    color: #d4416a;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: GothamPro-Bold sans-serif;
+    margin-top: 20px;
+    margin-bottom: 21px;
+    text-transform: uppercase;
+    max-width: 215px;
+    text-align: center;
+}
+.about__inner img{
+    display: block;
+    margin-bottom: 21px;
+}
+.about__inner p{
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    max-width: 275px;
+    margin-bottom: 40px;
+}
+.about__inner p > span{
+    font-weight: 700;
+}
+.about__inner a{
+    margin-bottom: 30px;
+}
+.about__inner::after{
+    background-image: url(../image/order-border.png);
+}
