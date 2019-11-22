@@ -132,7 +132,8 @@ body{
     border-radius: 5px;
     font-family: GothamPro sans-serif;
 }
-.order__block-inner a > span{
+.order__block-inner a > span,
+.about__inner a > span{
     font-weight: 700;
     font-family: GothamPro-Bold sans-serif;
 }
