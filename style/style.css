@@ -39,13 +39,10 @@ body{
         padding-top: 20px;
         padding-bottom: 13px;
         display: flex;
-        flex-direction: column;
+        flex: auto;
         align-items: center;
         justify-content: center;
         position: relative;
-    }
-    .header__logo:nth-child(1+2){
-        order: 0;
     }
     .header::after,
     .order__block::after,
@@ -66,7 +63,6 @@ body{
     }
     .header__logo h1 {
         margin-top: 0;
-        order: 1;
         color: #333333;
         font-weight: 700;
         font-size: 22px;
@@ -74,22 +70,18 @@ body{
         text-transform: uppercase;
         margin-bottom: 5px;
     }
-
     .header__logo h5 {
-        order: 2;
         margin-top: 5px;
         font-size: 12px;
         color: #d4416a;
         margin-bottom: 20px;
     }
-
     .contact__info {
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
         margin-bottom: 0px;
     }
-
     .contact__info a {
         padding-left: 11px;
         padding-right: 11px;
