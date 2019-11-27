@@ -213,7 +213,7 @@ body{
 .about__inner::after {
     background-image: url(../image/order-border.png);
 }
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1024px) {
     .container{
         min-width: 892px;
     }
@@ -275,13 +275,13 @@ body{
         color: #d4416a;
     }
     .order__block .container{
-        max-width: 1024px;
+        min-width: 1024px;
         overflow: hidden;
     }
     .order__block-baba{
         background-image: url(../image/baba__1024.jpg);
         height: 100%;
-        width: 1170px;
+        min-width: 1170px;
         background-position: right;
         background-repeat: no-repeat;
         background-size: cover;
@@ -306,9 +306,27 @@ body{
         order: 3;
     }
     .about__inner{
-        align-items: flex-end;
+        padding: 45px 80px 50px 263px;
+    }
+    .about__inner h3{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 22px;
+        min-width: 503px;
+        margin-bottom: 51px;
+        margin-right: 260px;
+    }
+    .about__inner p{
+        max-width: 611px;
+        line-height: 40px;
+        text-align: justify;
+        letter-spacing: 0.5px;
     }
     .about__inner img{
         position: absolute;
+        width: 230px;
+        height: 230px;
+        top: calc(50% - 125px);
+        right: 75%;
     }
 }
