@@ -31,7 +31,7 @@ body{
     line-height: 24px;
     color: #333333;
     text-transform: uppercase;
-    font-family: GothamPro;
+    font-family: 'GothamPro';
 }
 .nav a:active{
     color: #d4416a;
@@ -123,6 +123,7 @@ body{
     background-image: url(../image/order-border.png);
 }
 .order__block-inner h3 {
+    margin-top: 55px;
     text-transform: uppercase;
     max-width: 270px;
     font-size: 22px;
@@ -241,7 +242,7 @@ body{
         justify-content: space-between;
         align-items: flex-start;
         padding-top: 33px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
     }
     .contact__info{
         margin-top: 5px;
@@ -283,9 +284,11 @@ body{
         justify-content: space-between;
         padding-left: 5px;
         padding-right: 10px;
-        margin-top: 50px;
-        font-size: 30px;
-        letter-spacing: 0.5px;
+        margin-top: 10px;
+    }
+    .nav a{
+        font-size: 14px;
+        letter-spacing: 0.1px;
     }
     .nav a:first-child{
         color: #d4416a;
@@ -419,7 +422,37 @@ body{
         text-align: start;
     }
     .order__block-inner .lipstick__image{
-        height: 421px;
-        width: ;
+        left: calc(50% + 125px);
+        height: 426px;
+        width: 230px;
+    }
+    .about__inner{
+        padding-bottom: 150px;
+    }
+    .about__inner img{
+        height: 345px;
+        width: 345px;
+        top: calc(50% - 175px);
+    }
+    .about__inner h3{
+        font-size: 26px;
+        margin-right: 457px;
+    }
+    .about__inner p{
+        font-size: 12px;
+        min-width: 720px;
+        line-height: 27px;
+        text-align: left;
+    }
+    .about__inner::before{
+        content: ' ';
+        position: absolute;
+        bottom: calc(0px - 50px);
+        right: 5%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 357px;
+        width: 222px;
+        background-image: url(../image/before__about-lipstick.png);
     }
 }
