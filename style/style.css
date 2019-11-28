@@ -64,10 +64,11 @@ body{
     position: absolute;
     width: 100%;
     height: 23px;
+    left: 0px;
     background-image: url(../image/header-border.png);
-    bottom: -18px;
+    bottom: -23px;
     left: 0;
-    z-index: 2;
+    z-index: 4;
 }
 .header__inner {
     display: flex;
@@ -224,6 +225,14 @@ body{
     .container{
         min-width: 892px;
     }
+    .order__block::after{
+        content: '';
+        position: absolute;
+        height: 25px;
+        width: 100%;
+        bottom: -5px;
+        background-image: url(../image/bordertop.png);
+    }
     .header__box{
         width: 100%;
         display: flex;
@@ -266,7 +275,7 @@ body{
     .header__logo h5{
         font-size: 14px;
         line-height: 19.03px;
-        font-family: GothamPro-Light;
+        font-family: "GothamPro-Light";
     }
     .nav{
         width: 100%;
@@ -302,7 +311,7 @@ body{
     }
     .order__block-inner h3{
         max-width: 450px;
-        font-size: 25px;
+        font-size: 35px;
         margin-bottom: 60px;
     }
     .order__block-inner p{
@@ -347,4 +356,70 @@ body{
         right: 75%;
     }
 
+}
+@media only screen and (min-width: 1549px) {
+    .container{
+        min-width: 1476px;
+    }
+    .header__box{
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+        max-height: 105px;
+        align-items: flex-start;
+        padding: 35px 0px 33px 0px;
+    }
+    .header__box .nav{
+        max-width: 693px;
+        margin-top: 25px;
+    }
+    .nav a{
+        position: relative;
+        font-size: 13px;
+    }
+    .nav a::before{
+        content: ' ';
+        transition-timing-function: ease;
+        transition-duration: .1s;
+        position: absolute;
+        bottom: -10px;
+        height: 1px;
+        width: 0;
+        background-color: #d4416a;
+    }
+    .nav a:first-child::before {
+        width: 100%;
+    }
+    .nav a:active::before{
+        width: 100%;
+    }
+    .header__box .header__logo{
+        order: 1;
+    }
+    .order__block .container{
+        min-width: 1430px;
+        overflow: hidden;
+    }
+    .order__block-baba{
+        min-width: 1550px;
+    }
+    .order__block-inner{
+        padding-top: 35px;
+        padding-left: 140px;
+    }
+    .order__block-inner h3{
+        min-width: 600px;
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    .order__block-inner p{
+        min-width: 458px;
+        line-height: 21px;
+        letter-spacing: .2px;
+        text-align: start;
+    }
+    .order__block-inner .lipstick__image{
+        height: 421px;
+        width: ;
+    }
 }
