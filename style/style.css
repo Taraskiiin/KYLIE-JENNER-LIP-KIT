@@ -293,6 +293,9 @@ body{
     .nav a:first-child{
         color: #d4416a;
     }
+    .nav a:hover{
+        color: #d4416a;
+    }
     .order__block .container{
         min-width: 1024px;
         overflow: hidden;
@@ -393,7 +396,7 @@ body{
     .nav a:first-child::before {
         width: 100%;
     }
-    .nav a:active::before{
+    .nav a:hover::before{
         width: 100%;
     }
     .header__box .header__logo{
